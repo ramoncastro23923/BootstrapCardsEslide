@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo Bootstrap com Grid e Cards</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">    
+    <style>
+    @media (min-width: 576px) {
+        .custom-grid .col {
+            flex: 0 0 50%;  
+            max-width: 50%;
+        }
+    }
+
+    @media (min-width: 768px) and (max-width: 992px) {
+        .custom-grid .col {
+            flex: 0 0 50%;  
+            max-width: 50%;
+        }
+    }
+
+    @media (min-width: 992px) {
+        .custom-grid .col {
+            flex: 0 0 33.33%;  
+            max-width: 33.33%;
+        }
+    }
+    </style>
+</head>
+
+<body>
+    <div class="container mt-4">
+        <div id="carousel-exemplo" class="carousel carousel-fade slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2022/05/08/10/13/animal-7181776_960_720.jpg" alt="Foto de um gato">
+                        <div class="carousel-caption">
+                    <h2>Foto de um gato</h2>
+                </div>
+            </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2022/08/15/05/23/sun-rays-7387131_960_720.jpg" alt="Foto de um templo">
+                        <div class="carousel-caption">
+                    <h2>Foto de um templo</h2>
+                </div>
+            </div>
+            <div class="carousel-item">
+                    <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2022/08/13/15/42/fish-7383981_960_720.jpg" alt="Foto de um peixe">
+                        <div class="carousel-caption">
+                    <h2>Foto de um peixe</h2>
+                </div>
+            </div>
+        </div>
+
+        <button data-bs-target="#carousel-exemplo" data-bs-slide="prev" class="carousel-control-prev" type="button">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+
+        <button data-bs-target="#carousel-exemplo" data-bs-slide="next" class="carousel-control-next" type="button">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
+        
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carousel-exemplo" class="active" data-bs-slide-to="0" aria-current="true"></button>
+            <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="2"></button>
+        </div>
+    </div>
+</div>
+
+<div class="container mt-4">
+    <div class="row custom-grid">
+        <div class="col">
+            <div class="card">
+                <header class="card-header">
+                    Desenvolvimento Web
+                </header>
+                    <img src="https://via.placeholder.com/100x100" class="card-img-top" alt="...">
+                      <div class="card-body">
+                          <h4 class="card-title">Cards do Bootstrap</h4>
+                          <p class="card-text">Conheça os Cards do Bootstrap e suas variações.</p>
+                          <a href="#" class="btn btn-primary">Leia mais</a>
+                   </div>
+             
+                <footer class="card-footer">
+                    Postado em <time datetime="2022-08-10T19:00:00">10/08/2022 às 19:00:00</time>
+                </footer>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card">
+                <header class="card-header">
+                    Desenvolvimento Web
+                </header>
+                <img src="https://via.placeholder.com/100x100" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h4 class="card-title">Cards do Bootstrap</h4>
+                    <p class="card-text">Conheça os Cards do Bootstrap e suas variações.</p>
+                    <a href="#" class="btn btn-primary">Leia mais</a>
+                </div>
+                <footer class="card-footer">
+                    Postado em <time datetime="2022-08-10T19:00:00">10/08/2022 às 19:00:00</time>
+                </footer>
+            </div>
+        </div>
+        
+        <div class="col">
+            <div class="card">
+                <header class="card-header">
+                    Desenvolvimento Web
+                </header>
+                <img src="https://via.placeholder.com/100x100" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h4 class="card-title">Cards do Bootstrap</h4>
+                    <p class="card-text">Conheça os Cards do Bootstrap e suas variações.</p>
+                    <a href="#" class="btn btn-primary">Leia mais</a>
+                </div>
+                <footer class="card-footer">
+                    Postado em <time datetime="2022-08-10T19:00:00">10/08/2022 às 19:00:00</time>
+                </footer>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
